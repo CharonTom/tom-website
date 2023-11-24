@@ -1,10 +1,17 @@
 import { createContext, useState, useEffect } from "react";
 
-export const ThemeContext = createContext();
+interface ThemeContextType {
+  theme: string;
+  toggleTheme: () => void;
+}
 
-let datas = localStorage.getItem("selectedTheme") || "light";
+export const ThemeContext = createContext<ThemeContextType | undefined>(
+  undefined
+);
 
-export const ThemeProvider = ({ children }) => {
+const datas = localStorage.getItem("selectedTheme") || "light";
+
+export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState(datas);
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");

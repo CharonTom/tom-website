@@ -4,12 +4,18 @@ import { useContext } from "react";
 import { ThemeContext } from "../contexts/LightContext";
 
 const LightMode = () => {
-  const { toggleTheme, theme } = useContext(ThemeContext);
+  const themeContext = useContext(ThemeContext);
 
-  let checked = theme === "dark" ? true : false;
+  if (!themeContext) {
+    return null;
+  }
+
+  const { toggleTheme, theme } = themeContext;
+
+  const checked = theme === "dark" ? true : false;
 
   return (
-    <div className="dark_mode flex ">
+    <div className="dark_mode flex">
       <input
         className="dark_mode_input"
         type="checkbox"
