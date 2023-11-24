@@ -137,6 +137,7 @@ function Contact() {
           <div
             className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 "
             data-aos="fade-right"
+            data-aos-once="true"
           >
             <a href="mailto:charon.s.tom@gmail.com">
               <article className="contact-btn">
