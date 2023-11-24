@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input,
+  textarea {
+    @apply focus:outline-none;
+  }
+
+  .global-style {
+    @apply bg-secondary dark:bg-bgLightMode font-primary text-white transition-all duration-300;
+  }
+
+  .section {
+    @apply py-24 lg:min-h-screen flex items-center;
+  }
+
+  h1 {
+    @apply text-[27px] font-bold;
+  }
+  h2 {
+    @apply font-secondary text-primary my-6 text-center text-[24px] font-semibold dark:text-secondary;
+  }
+
+  h3 {
+    @apply text-[19px] font-semibold bg-secondaryVariant text-center text-lg rounded-lg py-1;
+  }
+
+  h4 {
+    @apply text-center mb-3;
+  }
+
+  .bg-skill-stack {
+    @apply bg-gradient-to-b from-primaryVariant to-secondary;
+  }
+  .bg-portfolio-cards {
+    @apply bg-gradient-to-b from-primaryVariant to-secondary;
+  }
+  .bg-portfolio-text {
+    @apply bg-gradient-to-t from-primaryVariant to-secondaryVariant;
+  }
+  .bg-filter-portfolio {
+    @apply bg-gradient-to-b from-primary to-light;
+  }
+  .bg-header {
+    @apply bg-gradient-to-b from-primary to-secondary;
+  }
+  .bg-light-header {
+    @apply bg-gradient-to-t from-gray to-primaryVariant;
+  }
+  .bg-nav {
+    @apply bg-gradient-to-r from-primary to-light;
+  }
+  .bg-light-nav {
+    @apply bg-gradient-to-l from-bgLightMode to-primary;
+  }
+  .contact-btn {
+    @apply dark:text-secondary p-5 rounded-2xl text-center
+     border border-primary;
+  }
+}
+
+.gradient-top {
+  position: relative;
+}
+
+.gradient-top:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(77, 181, 255, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.gradient-bottom {
+  position: relative;
+}
+
+.gradient-bottom:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(77, 181, 255, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.bg-light-switch {
+  background: #242424;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.bg-dark-switch {
+  background: #242424;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.bg-skill-cards {
+  background: linear-gradient(rgba(255, 255, 255, 0.6), #2c2c6c);
+}
+
+.bx-shad {
+  box-shadow: 1px 1px 5px #4db5ff;
+}
+
+.box {
+  border: 7px solid #4db5ff;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  background-image: linear-gradient(#4db5ff, #1f1f38);
+  animation: morph 5s ease-in-out infinite;
+}
+
+/* ---------------------Bouton 1 2 and 3-----------------  */
+.btn {
+  color: #4db5ff;
+  background: #1f1f38;
+  border: solid #4db5ff 1px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  width: fit-content;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.btn:hover {
+  color: #1f1f38;
+}
+
+.btn.active {
+  color: #1f1f38;
+  background: #4db5ff; /* Définissez la couleur que vous souhaitez pour le texte actif */
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: #4db5ff;
+  border-radius: 5px;
+  z-index: -1;
+  transition: transform 0.8s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+
+.btn:hover::before {
+  transform: scaleX(1);
+}
+
+.second-btn {
+  background: #4db5ff;
+  color: #1f1f38;
+  border: solid #4db5ff 1px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  width: fit-content;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.second-btn:hover {
+  color: black;
+}
+
+.second-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  z-index: -1;
+  transition: transform 0.8s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+
+.second-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.third-btn {
+  color: #4db5ff;
+  background: #1f1f38;
+  border: solid #4db5ff 1px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  width: fit-content;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.third-btn:hover {
+  color: black;
+}
+
+.third-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  z-index: -1;
+  transition: transform 0.8s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+
+.third-btn:hover::before {
+  transform: scaleX(1);
+}
+
+/* --------------------- Animation Hero --------------------------------- */
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 60% 40% 30% 70% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+/*----------------- Code pour le Switch Light------------------  */
+
+.dark_mode {
+}
+
+.dark_mode_label {
+  width: 50px;
+  height: 26px;
+  position: relative;
+  display: block;
+  background: #242424;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dark_mode_label:after {
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  background: #1f1f38;
+  border-radius: 180px;
+  transition: 0.3s;
+}
+.dark_mode_input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.dark_mode_input:checked + .dark_mode_label {
+  background: #ebebeb;
+}
+.dark_mode_input:checked + .dark_mode_label:after {
+  left: 50px;
+  transform: translateX(-100%);
+  background: #4db5ff;
+}
+.dark_mode_label:active:after {
+  width: 30px;
+}
+
+.dark_mode_label svg {
+  position: absolute;
+  width: 20px;
+  top: 4px;
+  z-index: 100;
+}
+.dark_mode_label svg.sun {
+  left: 29px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+.dark_mode_label svg.moon {
+  left: 2px;
+  fill: #fff;
+  transition: 0.3s;
+}
+.dark_mode_input:checked + .dark_mode_label svg.sun {
+  fill: #fff;
+}
+.dark_mode_input:checked + .dark_mode_label svg.moon {
+  fill: #7e7e7e;
+}
