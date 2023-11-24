@@ -40,16 +40,8 @@ function Skills() {
   return (
     <section className="section" id="skills">
       <div className="mx-auto gradient-top w-full">
-        <h2 className="">
-          {" "}
-          {translate[language as keyof typeof translate].skills}
-        </h2>
-        <div
-          style={{
-            backgroundImage: `url('/assets/wallpaper-dev.jpg')`,
-          }}
-          className="sm:bg-workBg gradient-bottom bg-cover p-6 overflow-hidden relative"
-        >
+        <h2>{translate[language as keyof typeof translate].skills}</h2>
+        <div className="sm:bg-workBg gradient-bottom bg-cover p-6 overflow-hidden relative">
           <div
             style={{ transform: "translate3d(0,0,0)" }}
             className="blur-[100px] bg-tertiary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"

@@ -30,7 +30,6 @@ module.exports = {
         bgLightMode: "rgb(241, 240, 240)",
       },
       backgroundImage: {
-        texture: "url('./assets/bg-texture.png')",
         workBg: "url(./assets/img/wallpaper-dev.jpg)",
       },
     },
