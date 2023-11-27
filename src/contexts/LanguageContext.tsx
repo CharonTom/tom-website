@@ -20,12 +20,13 @@ export const LanguageProvider = ({
   const [language, setLanguage] = useState(langData);
 
   useEffect(() => {
+    document.documentElement.lang = language.toLowerCase();
     window.localStorage.setItem("selectedLang", language);
   }, [language]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
-      <div className={language}>{children}</div>
+      {children}
     </LanguageContext.Provider>
   );
 };

@@ -18,11 +18,14 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   };
   useEffect(() => {
     window.localStorage.setItem("selectedTheme", theme);
+    document.documentElement.classList.remove("dark");
+    document.documentElement.classList.remove("light");
+    document.documentElement.classList.add(theme);
   }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className={theme}>{children}</div>
+      {children}
     </ThemeContext.Provider>
   );
 };
