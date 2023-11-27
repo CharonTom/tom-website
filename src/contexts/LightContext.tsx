@@ -9,7 +9,7 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(
   undefined
 );
 
-const datas = localStorage.getItem("selectedTheme") || "light";
+const datas = localStorage.getItem("selectedTheme") || "dark";
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState(datas);

@@ -18,7 +18,10 @@ function Hero() {
   }, [language]);
 
   return (
-    <section className="section dark:text-secondary relative" id="hero">
+    <section
+      className="section dark:text-white text-secondary relative"
+      id="hero"
+    >
       <div
         style={{ transform: "translate3d(0,0,0)" }}
         className="blur-[100px] bg-primary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"

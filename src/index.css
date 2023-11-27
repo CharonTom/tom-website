@@ -11,7 +11,7 @@
   }
 
   .global-style {
-    @apply bg-secondary dark:bg-bgLightMode font-primary text-white transition-all duration-300;
+    @apply dark:bg-secondary bg-bgLightMode font-primary text-white transition-all duration-300;
   }
 
   .section {
@@ -22,7 +22,7 @@
     @apply text-[27px] font-bold;
   }
   h2 {
-    @apply font-secondary text-primary my-6 text-center text-[24px] font-semibold dark:text-secondary;
+    @apply font-secondary text-primary my-6 text-center text-[24px] font-semibold dark:text-white text-secondary;
   }
 
   h3 {
@@ -58,7 +58,7 @@
     @apply bg-gradient-to-l from-bgLightMode to-primary;
   }
   .contact-btn {
-    @apply dark:text-secondary p-5 rounded-2xl text-center
+    @apply dark:text-white text-secondary p-5 rounded-2xl text-center
      border border-primary;
   }
 }
@@ -101,14 +101,7 @@
   );
 }
 
-.bg-light-switch {
-  background: #242424;
-  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-}
 .bg-dark-switch {
-  background: #242424;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
     inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
@@ -285,7 +278,7 @@
   height: 26px;
   position: relative;
   display: block;
-  background: #242424;
+  /* background: #242424; */
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
     inset 0px -5px 15px rgba(255, 255, 255, 0.4);
@@ -299,7 +292,7 @@
   position: absolute;
   top: 1px;
   left: 0px;
-  background: #1f1f38;
+  background: #4db5ff;
   border-radius: 180px;
   transition: 0.3s;
 }
@@ -309,12 +302,12 @@
   visibility: hidden;
 }
 .dark_mode_input:checked + .dark_mode_label {
-  background: #ebebeb;
+  background: #242424;
 }
 .dark_mode_input:checked + .dark_mode_label:after {
   left: 50px;
+  background: #1f1f38;
   transform: translateX(-100%);
-  background: #4db5ff;
 }
 .dark_mode_label:active:after {
   width: 30px;
@@ -326,19 +319,19 @@
   top: 4px;
   z-index: 100;
 }
-.dark_mode_label svg.sun {
+.dark_mode_label svg.moon {
   left: 29px;
   fill: #7e7e7e;
   transition: 0.3s;
 }
-.dark_mode_label svg.moon {
+.dark_mode_label svg.sun {
   left: 2px;
   fill: #fff;
   transition: 0.3s;
 }
-.dark_mode_input:checked + .dark_mode_label svg.sun {
+.dark_mode_input:checked + .dark_mode_label svg.moon {
   fill: #fff;
 }
-.dark_mode_input:checked + .dark_mode_label svg.moon {
+.dark_mode_input:checked + .dark_mode_label svg.sun {
   fill: #7e7e7e;
 }
