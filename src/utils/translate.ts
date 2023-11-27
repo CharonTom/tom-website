@@ -2,13 +2,13 @@ const translate = {
   EN: {
     // ------------------- Hero Part ------------------------
 
-    headerText: "Web Developper",
+    headerText: "Web Developer",
     Hi: "Hi !",
     MyName: "My name is ",
     Iam: "I'am a",
-    dev1: "Web Developper",
+    dev1: "Web Developer",
     dev2: "Web integrator",
-    dev3: "React Developpeur",
+    dev3: "React Developer",
     speech: `Passionate about web development,
      I aspire to leverage my skills and motivation to work for a company that is hiring a web developer.
     With a deep dive into the React.js and Node.js ecosystem,

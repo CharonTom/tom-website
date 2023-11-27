@@ -16,7 +16,7 @@ function SkillCards({
       className=" h-[105px] w-[80px]   lg:h-[150px] lg:w-[115px] bg-skill-cards rounded-lg flex 
     justify-center items-center flex-col border-2 border-gray-300 hover:scale-[1.02] transition duration-300 shadow hover:shadow-primary "
     >
-      <div className="bg-white rounded-full flex items-center p-1">
+      <div className="bg-white rounded-full flex items-center p-[2px]">
         <img
           src={logo}
           alt="logo's technos"
