@@ -22,6 +22,7 @@ function Portfolio() {
 
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category);
+    console.log(setSelectedCategory(category));
   };
 
   // Filtrer les projets en fonction de la catégorie sélectionnée
@@ -56,14 +57,14 @@ function Portfolio() {
               {translate[language as keyof typeof translate].filterButton1}
             </button>
 
-            <button
+            {/* <button
               className={`btn ${
                 selectedCategory === "intégration web" ? "active" : ""
               }`}
               onClick={() => handleCategorySelect("intégration web")}
             >
               {translate[language as keyof typeof translate].filterButton2}
-            </button>
+            </button> */}
             <button
               className={`btn ${
                 selectedCategory === "front-end" ? "active" : ""
@@ -121,7 +122,7 @@ function Portfolio() {
               className="swiper_containers"
             >
               {filteredProjects.map((project) => (
-                <SwiperSlide>
+                <SwiperSlide key={project.id}>
                   <ProjetCard
                     key={project.id}
                     titre={project.titre}

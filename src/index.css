@@ -287,11 +287,11 @@
 }
 .dark_mode_label:after {
   content: "";
-  width: 23px;
-  height: 23px;
+  width: 26px;
+  height: 26px;
   position: absolute;
-  top: 1px;
-  left: 0px;
+  top: 0px;
+  left: -1px;
   background: #4db5ff;
   border-radius: 180px;
   transition: 0.3s;
@@ -305,8 +305,8 @@
   background: #242424;
 }
 .dark_mode_input:checked + .dark_mode_label:after {
-  left: 50px;
-  background: #1f1f38;
+  left: 51px;
+  background: #0f0f1b;
   transform: translateX(-100%);
 }
 .dark_mode_label:active:after {
@@ -321,7 +321,7 @@
 }
 .dark_mode_label svg.moon {
   left: 29px;
-  fill: #7e7e7e;
+  fill: #666666;
   transition: 0.3s;
 }
 .dark_mode_label svg.sun {
