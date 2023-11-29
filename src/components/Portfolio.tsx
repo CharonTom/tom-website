@@ -1,14 +1,17 @@
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { IconContext } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-
 import ProjetCard from "../components/PortfolioCards";
 import PortfolioButtonsCard from "../components/PortfolioButtonsCard";
+
 import { useTranslateForData } from "../utils/project-datas";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext, useState } from "react";
@@ -120,6 +123,9 @@ function Portfolio() {
               }}
               modules={[EffectCoverflow, Pagination, Navigation]}
               className="swiper_containers"
+              style={{
+                "--swiper-pagination-color": "#4db5ff",
+              }}
             >
               {filteredProjects.map((project) => (
                 <SwiperSlide key={project.id}>
@@ -140,11 +146,9 @@ function Portfolio() {
                 </SwiperSlide>
               ))}
 
-              <div className="">
-                <div className="swiper-button-prev slider-arrow"></div>
-                <div className="swiper-button-next slider-arrow"></div>
-                <div className="swiper-pagination"></div>
-              </div>
+              <FaAngleLeft className="swiper-button-prev bg-secondary text-white w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2 " />
+              <FaAngleRight className="swiper-button-next bg-secondary text-white  w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2" />
+              <div className="swiper-pagination"></div>
             </Swiper>
           </div>
         </div>
