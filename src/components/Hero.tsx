@@ -109,7 +109,7 @@ function Hero() {
             </div>
           </div>
           <div
-            className="box overflow-hidden  h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
+            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
             data-aos="fade-left"
           >
             <img className="w-full" src={Me} alt="tom charon" />

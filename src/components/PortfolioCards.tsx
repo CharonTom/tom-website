@@ -25,7 +25,7 @@ function ProjetCard({
   return (
     <div
       className="rounded-xl relative overflow-hidden
-       bg-portfolio-cards transition-all p-3
+       bg-glass-effect transition-all p-3
         flex flex-col gap-y-4 group "
     >
       <h3 className="">{titre}</h3>
@@ -49,7 +49,7 @@ function ProjetCard({
           </div>
         </div>
       </div>
-      <div className="backdrop-blur-sm absolute lg:p-6 p-2 bg-filter-portfolio w-full h-full left-0 rounded-lg flex flex-col justify-center items-center -bottom-[calc(100%+100px)] group-hover:bottom-0 transition-all duration-700">
+      <div className="backdrop-blur-sm absolute lg:p-6 p-2 bg-filter-portfolio-card w-full h-full left-0 rounded-lg flex flex-col justify-center items-center -bottom-[calc(100%+100px)] group-hover:bottom-0 transition-all duration-700">
         <p className="p-4 rounded-xl text-[14px] text-black text-center">
           {description}
         </p>

@@ -1,8 +1,7 @@
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
-import { IconContext } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { NavigationOptions } from "swiper/types/modules/navigation";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -52,7 +51,7 @@ function Portfolio() {
 
           {/* Boutons de filtrage */}
 
-          <div className="flex flex-wrap justify-center space-x-4 mb-1">
+          <div className="flex flex-wrap justify-center space-x-4 mb-5">
             <button
               className={`btn ${selectedCategory === "all" ? "active" : ""}`}
               onClick={() => handleCategorySelect("all")}
@@ -116,16 +115,15 @@ function Portfolio() {
                 modifier: 2.5,
               }}
               pagination={{ el: ".swiper-pagination", clickable: true }}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                clickable: true,
-              }}
+              navigation={
+                {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                  clickable: true,
+                } as NavigationOptions
+              }
               modules={[EffectCoverflow, Pagination, Navigation]}
               className="swiper_containers"
-              style={{
-                "--swiper-pagination-color": "#4db5ff",
-              }}
             >
               {filteredProjects.map((project) => (
                 <SwiperSlide key={project.id}>
@@ -147,7 +145,7 @@ function Portfolio() {
               ))}
 
               <FaAngleLeft className="swiper-button-prev bg-secondary text-white w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2 " />
-              <FaAngleRight className="swiper-button-next bg-secondary text-white  w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2" />
+              <FaAngleRight className="swiper-button-next bg-secondary text-white w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2" />
               <div className="swiper-pagination"></div>
             </Swiper>
           </div>
