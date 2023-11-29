@@ -144,8 +144,8 @@ function Portfolio() {
                 </SwiperSlide>
               ))}
 
-              <FaAngleLeft className="swiper-button-prev bg-secondary text-white w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2 " />
-              <FaAngleRight className="swiper-button-next bg-secondary text-white w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2" />
+              <FaAngleLeft className="swiper-button-prev bg-secondary text-white w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2 transition-all duration-300 hover:text-primary" />
+              <FaAngleRight className="swiper-button-next bg-secondary text-white w-[40px] h-[40px] lg:w-[70px] lg:h-[70px] rounded-full p-2 transition-all duration-300 hover:text-primary" />
               <div className="swiper-pagination"></div>
             </Swiper>
           </div>

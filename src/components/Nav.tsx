@@ -38,6 +38,7 @@ function Nav() {
             smooth={true}
             activeClass="active"
             duration={500}
+            offset={25}
           >
             <div className="border-2 border-gray rounded-full">
               <img
@@ -55,6 +56,7 @@ function Nav() {
             smooth={true}
             activeClass="active"
             duration={500}
+            offset={25}
           >
             <div className="border-2 border-gray rounded-full">
               <img
@@ -72,6 +74,7 @@ function Nav() {
             smooth={true}
             activeClass="active"
             duration={500}
+            offset={25}
           >
             <div className="border-2 border-gray rounded-full">
               <img
