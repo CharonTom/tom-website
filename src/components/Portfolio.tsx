@@ -8,7 +8,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import ProjetCard from "../components/PortfolioCards";
+import PortfolioCards from "../components/PortfolioCards";
 import PortfolioButtonsCard from "../components/PortfolioButtonsCard";
 
 import { useTranslateForData } from "../utils/project-datas";
@@ -111,7 +111,7 @@ function Portfolio() {
             >
               {filteredProjects.map((project) => (
                 <SwiperSlide key={project.id}>
-                  <ProjetCard
+                  <PortfolioCards
                     key={project.id}
                     titre={project.titre}
                     img={project.img}

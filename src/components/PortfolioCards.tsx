@@ -7,7 +7,7 @@ interface Techno {
   alt: string;
 }
 
-function ProjetCard({
+function PortfolioCards({
   titre,
   img,
   description,
@@ -49,17 +49,15 @@ function ProjetCard({
           </div>
         </div>
       </div>
-      <div className="backdrop-blur-sm absolute lg:p-6 p-2 bg-filter-portfolio-card w-full h-full left-0 rounded-lg flex flex-col justify-center items-center -bottom-[calc(100%+100px)] group-hover:bottom-0 transition-all duration-700">
-        <p className="p-4 rounded-xl text-[14px] text-black text-center">
+      <div className="backdrop-blur-sm absolute lg:p-6 md:p-4 p-2 bg-filter-portfolio-card w-full h-full left-0 rounded-lg flex flex-col justify-around items-center -bottom-[calc(100%+100px)] group-hover:bottom-0 transition-all duration-700">
+        <p className="p-4 rounded-xl text-[14px] lg:text-[16px] md:text-[16px] text-black text-center">
           {description}
         </p>
 
-        <div className="flex flex-col items-center justify-center">
-          {button}
-        </div>
+        <div className="flex items-center justify-center">{button}</div>
       </div>
     </div>
   );
 }
 
-export default ProjetCard;
+export default PortfolioCards;

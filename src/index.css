@@ -360,12 +360,12 @@
 }
 
 .swiper-button-next {
-  left: 83% !important;
+  left: 90% !important;
   transform: translateX(-58%) !important;
 }
 
 .swiper-button-prev {
-  left: 18% !important;
+  left: 10% !important;
   transform: translateX(-58%) !important;
 }
 
