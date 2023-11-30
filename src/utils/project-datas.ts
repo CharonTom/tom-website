@@ -36,7 +36,7 @@ export function useTranslateForData() {
   const projects = [
     {
       id: 1,
-      categories: ["intégration web", "front-end"],
+      categories: ["integration", "front-end"],
       img: imageOMF,
       titre: "OhMyFood!",
       description: translate[language as keyof typeof translate].proj1,
@@ -92,7 +92,7 @@ export function useTranslateForData() {
     },
     {
       id: 3,
-      categories: ["front-end", "intégration web"],
+      categories: ["front-end", "integration"],
       img: imageKasa,
       titre: "Kasa",
       description: translate[language as keyof typeof translate].proj3,
@@ -192,7 +192,7 @@ export function useTranslateForData() {
     },
     {
       id: 7,
-      categories: ["front-end", "intégration web"],
+      categories: ["front-end", "integration"],
       img: imageBooki,
       titre: "Booki",
       description: translate[language as keyof typeof translate].proj7,
@@ -250,7 +250,7 @@ export function useTranslateForData() {
     },
     {
       id: 9,
-      categories: ["front-end", "full-stack", "back-end"],
+      categories: ["full-stack", "back-end"],
       img: imageAuth,
       titre: "Login Portal (MongoDB)",
       description: translate[language as keyof typeof translate].proj8,
@@ -275,7 +275,7 @@ export function useTranslateForData() {
     },
     {
       id: 10,
-      categories: ["front-end", "full-stack", "back-end"],
+      categories: ["full-stack", "back-end"],
       img: imageAuth,
       titre: "Login Portal (MySQL)",
       description: translate[language as keyof typeof translate].proj9,

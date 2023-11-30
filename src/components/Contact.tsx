@@ -176,6 +176,7 @@ function Contact() {
             ref={form}
             onSubmit={handleEmailSending}
             data-aos="fade-left"
+            data-aos-once="true"
           >
             <div className="flex gap-[10px]">
               <div className="flex-1">

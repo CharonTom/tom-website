@@ -2,7 +2,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import { NavigationOptions } from "swiper/types/modules/navigation";
-
+import classNames from "classnames";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -16,24 +16,42 @@ import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext, useState } from "react";
 import translate from "../utils/translate";
 
-function Portfolio() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+enum ProjectCategory {
+  IntegrationWeb = "integration",
+  FrontEnd = "front-end",
+  SEO = "SEO",
+  BackEnd = "back-end",
+  FullStack = "full-stack",
+}
 
+const categoryButtons = [
+  { label: "Front-end", category: ProjectCategory.FrontEnd },
+  {
+    label: "Integration",
+    category: ProjectCategory.IntegrationWeb,
+  },
+  { label: "SEO", category: ProjectCategory.SEO },
+  { label: "Back-End", category: ProjectCategory.BackEnd },
+  { label: "Full-Stack", category: ProjectCategory.FullStack },
+];
+
+function Portfolio() {
   const { language } = useContext(LanguageContext);
   const projects = useTranslateForData();
 
-  const handleCategorySelect = (category: string) => {
+  const [selectedCategory, setSelectedCategory] = useState(
+    ProjectCategory.FrontEnd
+  );
+
+  const handleCategorySelect = (category: ProjectCategory) => {
     setSelectedCategory(category);
-    console.log(setSelectedCategory(category));
   };
 
-  // Filtrer les projets en fonction de la catégorie sélectionnée
-  const filteredProjects =
-    selectedCategory === "all"
-      ? projects
-      : projects.filter((project) =>
-          project.categories.includes(selectedCategory)
-        );
+  const filteredProjects = projects.filter((project) =>
+    selectedCategory === ProjectCategory.FrontEnd
+      ? project.categories.includes(ProjectCategory.FrontEnd)
+      : project.categories.includes(selectedCategory)
+  );
 
   return (
     <>
@@ -52,51 +70,17 @@ function Portfolio() {
           {/* Boutons de filtrage */}
 
           <div className="flex flex-wrap justify-center space-x-4 mb-5">
-            <button
-              className={`btn ${selectedCategory === "all" ? "active" : ""}`}
-              onClick={() => handleCategorySelect("all")}
-            >
-              {translate[language as keyof typeof translate].filterButton1}
-            </button>
-
-            {/* <button
-              className={`btn ${
-                selectedCategory === "intégration web" ? "active" : ""
-              }`}
-              onClick={() => handleCategorySelect("intégration web")}
-            >
-              {translate[language as keyof typeof translate].filterButton2}
-            </button> */}
-            <button
-              className={`btn ${
-                selectedCategory === "front-end" ? "active" : ""
-              }`}
-              onClick={() => handleCategorySelect("front-end")}
-            >
-              Front-End
-            </button>
-            <button
-              className={`btn ${selectedCategory === "SEO" ? "active" : ""}`}
-              onClick={() => handleCategorySelect("SEO")}
-            >
-              SEO
-            </button>
-            <button
-              className={`btn ${
-                selectedCategory === "back-end" ? "active" : ""
-              }`}
-              onClick={() => handleCategorySelect("back-end")}
-            >
-              Back-End
-            </button>
-            <button
-              className={`btn ${
-                selectedCategory === "full-stack" ? "active" : ""
-              }`}
-              onClick={() => handleCategorySelect("full-stack")}
-            >
-              Full-Stack
-            </button>
+            {categoryButtons.map((button) => (
+              <button
+                key={button.category}
+                className={classNames("btn", {
+                  active: selectedCategory === button.category,
+                })}
+                onClick={() => handleCategorySelect(button.category)}
+              >
+                {button.label}
+              </button>
+            ))}
           </div>
 
           {/* Affichage des projets*/}
@@ -106,7 +90,7 @@ function Portfolio() {
               effect={"coverflow"}
               //  grabCursor={true}
               centeredSlides={true}
-              loop={true}
+              // loop={true}
               slidesPerView={"auto"}
               coverflowEffect={{
                 rotate: 0,
