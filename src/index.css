@@ -22,7 +22,7 @@
     @apply text-[27px] font-bold;
   }
   h2 {
-    @apply font-secondary text-primary my-6 text-center text-[24px] font-semibold dark:text-white text-secondary;
+    @apply font-secondary dark:text-primary my-6 text-center text-[24px] font-semibold text-secondary;
   }
 
   h3 {
