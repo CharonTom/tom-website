@@ -177,16 +177,14 @@ export function useTranslateForData() {
       titre: "My Website",
       description: translate[language as keyof typeof translate].proj6,
       technos: [
-        { logo: logoHTML, alt: "HTML" },
-        { logo: logoCSS, alt: "CSS" },
-        { logo: logoJS, alt: "JavaScript" },
-        { logo: logoTailwind, alt: "Tailwind CSS" },
         { logo: logoReact, alt: "React" },
+        { logo: logoTS, alt: "TypeScript" },
+        { logo: logoTailwind, alt: "Tailwind CSS" },
       ],
       buttons: [
         {
           text: translate[language as keyof typeof translate].seeCodeButton,
-          link: "https://github.com/CharonTom/my-website",
+          link: "https://github.com/CharonTom/tom-website",
         },
       ],
     },

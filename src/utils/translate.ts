@@ -41,7 +41,7 @@ const translate = {
     proj5:
       "This website had SEO issues. I analyzed this and improved it to reduce loading time and to apply a good SEO and accessibility practices. An optimization report was carried out to indicate the pre and post results optimization.",
     proj6:
-      "This is of course my Portfolio, the site you are on. It was entirely designed with React and its libraries. I also used the TailwindCSS's Framework and EmailJS to redirect messages to my mailbox.",
+      "This is of course my Portfolio, the site you are on. It was entirely designed with React and TypeScript. I also used the TailwindCSS's Framework and EmailJS to redirect messages to my mailbox.",
     proj7:
       "This is the first work which marked my retraining. I learned the basics of web development by doing the integration of this mockup in HTML and CSS. This is a page for an online accommodation booking site. The mockup was made on Figma by a UI designer",
     proj8:
@@ -103,7 +103,7 @@ const translate = {
     proj5:
       "Ce site web avait des problèmes de référencement. Il a été analysé et amélioré pour réduire son temps de chargement et appliquer les bonnes pratiques du SEO et d'accessibilité. Un rapport d'optimisation a été réalisé pour indiquer les résultats pré et post optimisation.",
     proj6:
-      "Il s'agit bien sûr de mon Portfolio, le site sur lequel vous vous trouvez. Il a été entièrement conçu avec React et ses librairies. J'ai également utilisé le Framework CSS TailwindCSS et EmailJS pour la redirection des messages sur ma boite mail.",
+      "Il s'agit bien sûr de mon Portfolio, le site sur lequel vous vous trouvez. Je l'ai entièrement conçu avec React et ses librairies en TypeScript. J'ai également utilisé le Framework TailwindCSS et EmailJS pour la redirection des messages sur ma boite mail.",
     proj7:
       "Ceci est le premier travail qui a marqué le début de ma reconversion. J'ai appris les bases du développement web en faisant cette intégration de maquette en HTML et CSS. Il s'agit d'une page pour un site de réservation de logement en ligne. La maquette a été réalisée sur Figma par un designer UI",
     proj8:

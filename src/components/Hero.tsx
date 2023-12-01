@@ -1,10 +1,10 @@
-import { useState, useRef, useContext, useEffect } from "react";
 import { RefObject } from "react";
+import { useState, useRef, useContext, useEffect } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
 import { TypeAnimation } from "react-type-animation";
+import translate from "../utils/translate";
 import Me from "../assets/img/photo-de-profil.png";
 import CV from "../assets/CV2023.pdf";
-import translate from "../utils/translate";
-import { LanguageContext } from "../contexts/LanguageContext";
 
 function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +35,7 @@ function Hero() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
           <div data-aos="fade-right">
             {/* text hi */}
+
             <div className="text-center lg:text-left mb-5 relative">
               <p className="font-semibold">
                 {translate[language as keyof typeof translate].Hi}
@@ -64,7 +65,9 @@ function Hero() {
                 />
               </div>
             </div>
+
             {/* buttons part */}
+
             <div className="flex mx-auto lg:mx-0 max-w-max ">
               <button
                 onClick={() => {
@@ -83,7 +86,9 @@ function Hero() {
                 {translate[language as keyof typeof translate].cvButton}
               </a>
             </div>
+
             {/* speech */}
+
             <div
               ref={refContent}
               style={
@@ -107,7 +112,7 @@ function Hero() {
             </div>
           </div>
           <div
-            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
+            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
             data-aos="fade-left"
           >
             <img
