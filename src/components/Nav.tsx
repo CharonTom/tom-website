@@ -6,11 +6,15 @@ import linkedinLogo from "../assets/logos/linkedin.webp";
 import githubLogo from "../assets/logos/github.webp";
 import externeLogo from "../assets/logos/external-link.webp";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 function Nav() {
   return (
     <nav className="fixed bottom-4 lg:bottom-5 z-10 mx-auto left-1/2 transform -translate-x-1/2">
-      <ul
+      <motion.ul
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 1 }}
         className="border-2 dark:border-gray border-primary rounded-full dark:bg-navbar bg-light-navbar
         flex justify-around items-center h-[70px] w-full max-w-[430px] mx-auto"
       >
@@ -121,7 +125,7 @@ function Nav() {
             />
           </a>
         </li>
-      </ul>
+      </motion.ul>
     </nav>
   );
 }

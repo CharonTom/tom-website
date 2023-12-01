@@ -5,6 +5,7 @@ import Me from "../assets/img/photo-de-profil.png";
 import CV from "../assets/CV2023.pdf";
 import translate from "../utils/translate";
 import { LanguageContext } from "../contexts/LanguageContext";
+import { motion } from "framer-motion";
 
 function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,11 @@ function Hero() {
 
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
-          <div data-aos="fade-right">
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             {/* text hi */}
             <div className="text-center lg:text-left mb-5 relative">
               <p className="font-semibold">
@@ -107,13 +112,15 @@ function Hero() {
                 {translate[language as keyof typeof translate].speech}
               </p>
             </div>
-          </div>
-          <div
-            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
-            data-aos="fade-left"
+          </motion.div>
+          <motion.div
+            className="box overflow-hidden z-10 h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
           >
             <img className="w-full" src={Me} alt="tom charon" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
