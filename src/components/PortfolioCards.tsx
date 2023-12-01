@@ -30,7 +30,7 @@ function PortfolioCards({
     >
       <h3 className="">{titre}</h3>
       <div className="mx-auto transition-all duration-500 group-hover:scale-105">
-        <img className="object-cover" src={img} alt="projet" />
+        <img className="object-cover w-full h-full" src={img} alt="projet" />
       </div>
       <div className="relative flex flex-col gap-y-4 ">
         <div className="">

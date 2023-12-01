@@ -37,7 +37,6 @@ function Hero() {
             {/* text hi */}
             <div className="text-center lg:text-left mb-5 relative">
               <p className="font-semibold">
-                {" "}
                 {translate[language as keyof typeof translate].Hi}
               </p>
               <h1>
@@ -46,7 +45,6 @@ function Hero() {
               </h1>
               <div className="font-semibold">
                 <span className="mr-2">
-                  {" "}
                   {translate[language as keyof typeof translate].Iam}
                 </span>
                 <TypeAnimation
@@ -112,7 +110,11 @@ function Hero() {
             className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
             data-aos="fade-left"
           >
-            <img className="w-full" src={Me} alt="tom charon" />
+            <img
+              className="object-cover w-full h-full"
+              src={Me}
+              alt="tom charon"
+            />
           </div>
         </div>
       </div>
