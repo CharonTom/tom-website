@@ -373,7 +373,7 @@ export function useTranslateForData() {
         {
           text: translate[language as keyof typeof translate]
             .presentationButton,
-          link: "",
+          link: "https://github.com/CharonTom/villa-robion/blob/main/README.md",
         },
         {
           text: translate[language as keyof typeof translate]

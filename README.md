@@ -11,8 +11,8 @@ Mon Portfolio a été conçu avec React et ses librairies en TypeScript. J'ai é
 - Vite.js
 - TypeScript
 - React
-- TailwindCSS
-- git / github
+- Tailwind CSS
+- Git / Github
 
 ## À Propos de Moi
 
@@ -22,4 +22,4 @@ Passionné par le développement web et fraichement diplômé dans le secteur. J
 
 - Email : charon.s.tom@mgail.com
 - LinkedIn : https://www.linkedin.com/in/tom-charon/
-- Site Web : https://tom-website-six.vercel.app/
+- Site Web : https://www.tomcharon.fr/
