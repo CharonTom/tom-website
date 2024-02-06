@@ -24,6 +24,7 @@ import imageBooki from "../assets/img/booki.png";
 import imagePromptopia from "../assets/img/promptopia.png";
 import imageTask from "../assets/img/task.png";
 import imageEcommerce from "../assets/img/ecommerce.png";
+import imageLn from "../assets/img/ln.png";
 
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext } from "react";
@@ -349,6 +350,35 @@ export function useTranslateForData() {
           text: translate[language as keyof typeof translate]
             .visitWebsiteButton,
           link: "https://charontom.github.io/React-Tailwind-E-commerce/",
+        },
+      ],
+    },
+    {
+      id: 13,
+      categories: ["integration", "front-end"],
+      img: imageLn,
+      titre: "La maison de Nath & Lio",
+      description: translate[language as keyof typeof translate].proj13,
+      technos: [
+        { logo: logoNext, alt: "Next" },
+        { logo: logoReact, alt: "React" },
+        { logo: logoTS, alt: "TypeScript" },
+        { logo: logoTailwind, alt: "TailwindCSS" },
+      ],
+      buttons: [
+        {
+          text: translate[language as keyof typeof translate].seeCodeButton,
+          link: "https://github.com/CharonTom/villa-robion",
+        },
+        {
+          text: translate[language as keyof typeof translate]
+            .presentationButton,
+          link: "",
+        },
+        {
+          text: translate[language as keyof typeof translate]
+            .visitWebsiteButton,
+          link: "https://www.lamaisondenathetlio.fr/",
         },
       ],
     },

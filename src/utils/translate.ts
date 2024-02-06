@@ -54,6 +54,8 @@ const translate = {
       "A small e-commerce application developed with React and TailwindCSS. The aim of this exercise was to learn to master shopping cart management using JSX and context API. I also used Fake Store API which is an API intended for e-commerce site prototypes.",
     proj12:
       "I made this Full-stack app with GraphQL for the back and React for the front. It's a task manager that allows users to create, delete, edit and sort tasks into groups.",
+    proj13:
+      "I've entirely crafted this website for the rental of a villa in the South of France, taking care of everything from design to hosting. I used Figma, Next 14, and Tailwind CSS for its development, and subsequently ensured hosting on the Vercel platform.",
     // ------------------- Contact Part ------------------------
 
     contact: "Let's talk !",
@@ -116,6 +118,8 @@ const translate = {
       "Une petite application e-commerce développée avec React et TailwindCSS. L'objectif de cet exercice était d'apprendre à maîtriser la gestion de panier en utilisant le JSX offert par React et l'utilisation de context API. J'ai également utilisé Fake Store API qui est une API destinée aux prototypes de site e-commerce.",
     proj12:
       "J'ai réalisé cette application Full-stack from scratch avec GraphQL pour le Back et React pour le Front. Il s'agit d'un gestionnaire de tâche qui permet aux utilisateurs de créer, supprimer, modifier et de classer les tâches par groupes.",
+    proj13:
+      "J'ai créé de A à Z ce site web pour la location d'une villa dans le sud de la France, en me chargeant du design jusqu'à l'hébergement. J'ai utilisé Figma, Next 14 et Tailwind CSS pour son développement, j'ai ensuite assuré l'hébergement sur la plateforme Vercel.",
     filterButton1: "Tous ",
     filterButton2: "Intégration web",
     showMoreButton: "Voir plus",
