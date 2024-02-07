@@ -1,12 +1,14 @@
-import profilLogo from "../assets/logos/profil.webp";
 import skillLogo from "../assets/logos/skill.webp";
 import portfolioLogo from "../assets/logos/portfolio.webp";
-import contactLogo from "../assets/logos/contact.webp";
 import linkedinLogo from "../assets/logos/linkedin.webp";
 import githubLogo from "../assets/logos/github.webp";
 import externeLogo from "../assets/logos/external-link.webp";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+
+import { BsChatSquareText } from "react-icons/bs";
+
+import { FaUserAlt } from "react-icons/fa";
 
 function Nav() {
   return (
@@ -26,12 +28,8 @@ function Nav() {
             activeClass="active"
             duration={500}
           >
-            <div className="border-2 border-gray rounded-full">
-              <img
-                src={profilLogo}
-                alt="link's logo"
-                className="h-full rounded-full w-[40px] h-[40px]"
-              />
+            <div className="flex justify-center items-end border-2 border-gray rounded-full w-[40px] h-[40px] overflow-hidden">
+              <FaUserAlt className="text-black text-[31px]" />
             </div>
           </Link>
         </li>
@@ -48,7 +46,7 @@ function Nav() {
               <img
                 src={skillLogo}
                 alt="link's logo"
-                className="h-full rounded-full w-[40px] h-[40px]"
+                className="h-full rounded-full w-[40px] h-[40px] p-[1px]"
               />
             </div>
           </Link>
@@ -62,11 +60,11 @@ function Nav() {
             duration={500}
             offset={25}
           >
-            <div className="border-2 border-gray rounded-full">
+            <div className="border-2 border-gray rounded-full overflow-hidden">
               <img
                 src={portfolioLogo}
                 alt="link's logo"
-                className="h-full rounded-full w-[40px] h-[40px]"
+                className="h-full w-[40px] h-[40px] p-[2px]"
               />
             </div>
           </Link>
@@ -80,12 +78,8 @@ function Nav() {
             duration={500}
             offset={25}
           >
-            <div className="border-2 border-gray rounded-full">
-              <img
-                src={contactLogo}
-                alt="link's logo"
-                className="h-full rounded-full w-[40px] h-[40px]"
-              />
+            <div className="flex justify-center items-center border-2 border-gray rounded-full w-[40px] h-[40px] overflow-hidden">
+              <BsChatSquareText className="text-black text-3xl p-[1px]" />
             </div>
           </Link>
         </li>
