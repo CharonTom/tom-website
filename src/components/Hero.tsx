@@ -2,6 +2,8 @@ import { RefObject } from "react";
 import { useState, useRef, useContext, useEffect } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+
 import translate from "../utils/translate";
 import Me from "../assets/img/profil.png";
 import CV from "../assets/CV2023.pdf";
@@ -33,7 +35,11 @@ function Hero() {
 
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
-          <div data-aos="fade-right">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+          >
             {/* text hi */}
 
             <div className="text-center lg:text-left mb-5 relative">
@@ -110,17 +116,19 @@ function Hero() {
                 {translate[language as keyof typeof translate].speech}
               </p>
             </div>
-          </div>
-          <div
-            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
-            data-aos="fade-left"
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0 z-40"
           >
             <img
               className="object-cover w-full h-full"
               src={Me}
               alt="tom charon"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

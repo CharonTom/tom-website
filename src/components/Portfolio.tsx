@@ -88,7 +88,6 @@ function Portfolio() {
           <div className="containers">
             <Swiper
               effect={"coverflow"}
-              //  grabCursor={true}
               centeredSlides={true}
               // loop={true}
               slidesPerView={"auto"}
