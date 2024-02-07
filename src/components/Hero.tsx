@@ -3,7 +3,7 @@ import { useState, useRef, useContext, useEffect } from "react";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { TypeAnimation } from "react-type-animation";
 import translate from "../utils/translate";
-import Me from "../assets/img/photo-de-profil.png";
+import Me from "../assets/img/profil.png";
 import CV from "../assets/CV2023.pdf";
 
 function Hero() {

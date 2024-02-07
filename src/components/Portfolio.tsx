@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import PortfolioCards from "../components/PortfolioCards";
 import PortfolioButtonsCard from "../components/PortfolioButtonsCard";
 
-import { useTranslateForData } from "../utils/project-datas";
+import { useTranslateForData } from "../utils/project-data";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext, useState } from "react";
 import translate from "../utils/translate";

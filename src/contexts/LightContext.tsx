@@ -9,12 +9,12 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(
   undefined
 );
 
-const datas = localStorage.getItem("selectedTheme") || "dark";
+const data = localStorage.getItem("selectedTheme") || "dark";
 
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [theme, setTheme] = useState<string>(datas);
+  const [theme, setTheme] = useState<string>(data);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");

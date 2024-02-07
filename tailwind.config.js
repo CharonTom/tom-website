@@ -29,7 +29,7 @@ module.exports = {
         bgLightMode: "rgb(241, 240, 240)",
       },
       backgroundImage: {
-        workBg: "url(./assets/img/wallpaper-dev.jpg)",
+        workBg: "url(./assets/img/bg-devsetup.jpg)",
       },
     },
   },
