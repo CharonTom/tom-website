@@ -27,10 +27,10 @@ function ScrollToTop() {
     <div className="">
       {ScrollToTop && (
         <button
-          className="flex justify-center items-center fixed inline-block sm:bottom-8  group bottom-[100px] right-10 bg-secondary border border-primary text-primary text-[17px] w-[40px] h-[40px] rounded-md cursor-pointer z-20"
+          className="btn flex justify-center items-center fixed inline-block sm:bottom-8 group bottom-[100px] right-10 z-20"
           onClick={scrollUp}
         >
-          <FaAngleUp className="transition-all duration-300 group-hover:-translate-y-[3px]" />
+          <FaAngleUp className="transition-all duration-300 group-hover:-translate-y-[3px] text-lg" />
         </button>
       )}
     </div>
