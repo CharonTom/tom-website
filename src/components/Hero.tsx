@@ -101,11 +101,11 @@ function Hero() {
                       opacity: "0",
                     }
               }
-              className="transition-all duration-1000 ease-in-out overflow-hidden"
+              className="transition-all duration-700 ease-in-out overflow-hidden"
             >
               <p
-                className="text-[14px] text-center p-3 w-[340px] border-2
-            border-primaryVariant rounded-xl mx-auto lg:mx-0 m-4"
+                className="text-[14px] text-center p-3 w-[340px] border-t-[1px] border-b-[1px]
+            border-primary rounded-lg mx-auto lg:mx-0 m-4"
               >
                 {translate[language as keyof typeof translate].speech}
               </p>
