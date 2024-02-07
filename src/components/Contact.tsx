@@ -191,7 +191,9 @@ function Contact() {
                   onChange={handleChange}
                 />
                 {formError.name && (
-                  <p className="text-red-500 text-sm mt-2">{formError.name}</p>
+                  <p className="text-red-500 text-xs sm:text-sm mt-2 ml-1">
+                    {formError.name}
+                  </p>
                 )}
               </div>
               <div className="flex-1">
@@ -204,7 +206,9 @@ function Contact() {
                   onChange={handleChange}
                 />
                 {formError.email && (
-                  <p className="text-red-500 text-sm mt-2">{formError.email}</p>
+                  <p className="text-red-500 text-xs sm:text-sm mt-2 ml-1">
+                    {formError.email}
+                  </p>
                 )}
               </div>
             </div>
@@ -217,7 +221,9 @@ function Contact() {
               onChange={handleChange}
             ></textarea>
             {formError.message && (
-              <p className="text-red-500 text-sm">{formError.message}</p>
+              <p className="text-red-500 text-xs sm:text-sm ml-1">
+                {formError.message}
+              </p>
             )}
 
             <button
