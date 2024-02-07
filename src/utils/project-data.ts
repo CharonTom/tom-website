@@ -223,9 +223,8 @@ export function useTranslateForData() {
       titre: "Task Manager",
       description: translate[language as keyof typeof translate].proj12,
       technos: [
-        { logo: logoReact, alt: "React" },
         { logo: logoTS, alt: "TypeScript" },
-        { logo: logoTailwind, alt: "TailwindCSS" },
+        { logo: logoReact, alt: "React" },
         { logo: logoNodeJS, alt: "Node" },
         { logo: logoGraphQL, alt: "GraphQL" },
         { logo: logoMongo, alt: "MongoDB" },

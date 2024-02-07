@@ -41,7 +41,7 @@ function PortfolioCards({
             {technos.map((techno, index) => (
               <img
                 key={index}
-                className="lg:w-14 md:w-12 w-10 h-10 lg:h-14 md:h-12 bg-white rounded-full border-2 border-primary"
+                className="lg:w-14 md:w-12 w-10 h-10 lg:h-14 md:h-12 bg-white rounded-full border-[1px] border-white"
                 src={techno.logo}
                 alt={techno.alt}
               />
