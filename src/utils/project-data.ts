@@ -12,6 +12,7 @@ import logoGraphQL from "../assets/logos/graphql.webp";
 import logoExpress from "../assets/logos/expressJS.webp";
 import logoMySQL from "../assets/logos/mySQL.webp";
 import logoNext from "../assets/logos/next-js.webp";
+import logoFigma from "../assets/logos/figma.png";
 
 import imageKanap from "../assets/img/devices/kanap.png";
 import imageOMF from "../assets/img/devices/omf.png";
@@ -40,7 +41,8 @@ export function useTranslateForData() {
       categories: ["integration", "front-end"],
       img: imageOMF,
       titre: "OhMyFood!",
-      description: translate[language as keyof typeof translate].proj1,
+      description:
+        translate[language as keyof typeof translate].projects.ohmyfood,
       technos: [
         { logo: logoHTML, alt: "HTML" },
         { logo: logoCSS, alt: "CSS" },
@@ -68,7 +70,7 @@ export function useTranslateForData() {
       categories: ["front-end"],
       img: imageKanap,
       titre: "Kanap",
-      description: translate[language as keyof typeof translate].proj2,
+      description: translate[language as keyof typeof translate].projects.kanap,
       technos: [
         { logo: logoHTML, alt: "HTML" },
         { logo: logoCSS, alt: "CSS" },
@@ -96,7 +98,7 @@ export function useTranslateForData() {
       categories: ["front-end", "integration"],
       img: imageKasa,
       titre: "Kasa",
-      description: translate[language as keyof typeof translate].proj3,
+      description: translate[language as keyof typeof translate].projects.kasa,
       technos: [
         { logo: logoHTML, alt: "HTML" },
         { logo: logoCSS, alt: "CSS" },
@@ -126,7 +128,8 @@ export function useTranslateForData() {
       categories: ["back-end"],
       img: imagePiiquante,
       titre: "Hot Takes",
-      description: translate[language as keyof typeof translate].proj4,
+      description:
+        translate[language as keyof typeof translate].projects.hottakes,
       technos: [
         { logo: logoNodeJS, alt: "NodeJS" },
         { logo: logoExpress, alt: "Express" },
@@ -149,7 +152,8 @@ export function useTranslateForData() {
       categories: ["SEO", "front-end"],
       img: imagePanthere,
       titre: "La Panthere",
-      description: translate[language as keyof typeof translate].proj5,
+      description:
+        translate[language as keyof typeof translate].projects.panthere,
       technos: [
         { logo: logoHTML, alt: "HTML" },
         { logo: logoBootstrap, alt: "Bootstrap" },
@@ -176,7 +180,8 @@ export function useTranslateForData() {
       categories: ["front-end"],
       img: imageMyWebsite,
       titre: "My Website",
-      description: translate[language as keyof typeof translate].proj6,
+      description:
+        translate[language as keyof typeof translate].projects.mywebsite,
       technos: [
         { logo: logoReact, alt: "React" },
         { logo: logoTS, alt: "TypeScript" },
@@ -194,7 +199,7 @@ export function useTranslateForData() {
       categories: ["front-end", "integration"],
       img: imageBooki,
       titre: "Booki",
-      description: translate[language as keyof typeof translate].proj7,
+      description: translate[language as keyof typeof translate].projects.booki,
       technos: [
         { logo: logoHTML, alt: "HTML" },
         { logo: logoCSS, alt: "CSS" },
@@ -221,7 +226,8 @@ export function useTranslateForData() {
       categories: ["front-end", "full-stack", "back-end"],
       img: imageTask,
       titre: "Task Manager",
-      description: translate[language as keyof typeof translate].proj12,
+      description:
+        translate[language as keyof typeof translate].projects.taskmanager,
       technos: [
         { logo: logoTS, alt: "TypeScript" },
         { logo: logoReact, alt: "React" },
@@ -251,7 +257,8 @@ export function useTranslateForData() {
       categories: ["full-stack", "back-end"],
       img: imageAuth,
       titre: "Login Portal (MongoDB)",
-      description: translate[language as keyof typeof translate].proj8,
+      description:
+        translate[language as keyof typeof translate].projects.mongoportail,
       technos: [
         { logo: logoReact, alt: "React" },
         { logo: logoSass, alt: "Sass" },
@@ -276,7 +283,8 @@ export function useTranslateForData() {
       categories: ["full-stack", "back-end"],
       img: imageAuth,
       titre: "Login Portal (MySQL)",
-      description: translate[language as keyof typeof translate].proj9,
+      description:
+        translate[language as keyof typeof translate].projects.sqlportail,
       technos: [
         { logo: logoReact, alt: "React" },
         { logo: logoSass, alt: "Sass" },
@@ -301,7 +309,8 @@ export function useTranslateForData() {
       categories: ["front-end", "full-stack", "back-end"],
       img: imagePromptopia,
       titre: "Promptopia",
-      description: translate[language as keyof typeof translate].proj10,
+      description:
+        translate[language as keyof typeof translate].projects.promptopia,
       technos: [
         { logo: logoReact, alt: "React" },
         { logo: logoTailwind, alt: "TailwindCSS" },
@@ -330,7 +339,8 @@ export function useTranslateForData() {
       categories: ["front-end"],
       img: imageEcommerce,
       titre: "E-commerce website",
-      description: translate[language as keyof typeof translate].proj11,
+      description:
+        translate[language as keyof typeof translate].projects.ecommerce,
       technos: [
         { logo: logoReact, alt: "React" },
         { logo: logoTailwind, alt: "TailwindCSS" },
@@ -357,12 +367,14 @@ export function useTranslateForData() {
       categories: ["integration", "front-end"],
       img: imageLn,
       titre: "La maison de Nath & Lio",
-      description: translate[language as keyof typeof translate].proj13,
+      description:
+        translate[language as keyof typeof translate].projects.nathetlio,
       technos: [
         { logo: logoNext, alt: "Next" },
         { logo: logoReact, alt: "React" },
         { logo: logoTS, alt: "TypeScript" },
         { logo: logoTailwind, alt: "TailwindCSS" },
+        { logo: logoFigma, alt: "Figma" },
       ],
       buttons: [
         {
