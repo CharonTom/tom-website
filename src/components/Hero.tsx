@@ -36,7 +36,7 @@ function Hero() {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
           >
@@ -118,7 +118,7 @@ function Hero() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
             className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0 z-10"

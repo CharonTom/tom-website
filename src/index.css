@@ -5,11 +5,6 @@
 @tailwind utilities;
 
 @layer base {
-  input,
-  textarea {
-    @apply focus:outline-none;
-  }
-
   .global-style {
     @apply dark:bg-secondary bg-bgLightMode font-primary text-white transition-all duration-300;
   }
@@ -58,6 +53,13 @@
      border border-primary;
   }
 }
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px #4db5ff, 0 0 10px #4db5ff;
+}
+
 .contact-btn:hover {
   box-shadow: inset 0 0 1px #4db5ff, 0 0 10px #4db5ff;
 }
