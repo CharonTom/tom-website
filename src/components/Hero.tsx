@@ -121,7 +121,7 @@ function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0 z-40"
+            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0 z-10"
           >
             <img
               className="object-cover w-full h-full"

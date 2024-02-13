@@ -12,7 +12,7 @@ import { FaUserAlt } from "react-icons/fa";
 
 function Nav() {
   return (
-    <nav className="fixed bottom-4 lg:bottom-5 z-10 mx-auto left-1/2 transform -translate-x-1/2">
+    <nav className="fixed bottom-4 lg:bottom-5 z-20 mx-auto left-1/2 transform -translate-x-1/2">
       <motion.ul
         initial={{ y: 100 }}
         animate={{ y: 0 }}
