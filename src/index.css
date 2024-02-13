@@ -168,28 +168,6 @@ textarea:focus {
   box-shadow: inset 0 0 1px #4db5ff, 0 0 10px #4db5ff;
 }
 
-/* .second-btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
-  z-index: -1;
-  transition: transform 0.8s;
-  transform-origin: 0 0;
-  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-  transform: scaleX(0);
-}
-
-.second-btn:hover::before {
-  transform: scaleX(1);
-} */
-
 /* --------------------- Animation Hero --------------------------------- */
 
 @keyframes morph {
@@ -211,7 +189,6 @@ textarea:focus {
   height: 26px;
   position: relative;
   display: block;
-  /* background: #242424; */
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
     inset 0px -5px 15px rgba(255, 255, 255, 0.4);
