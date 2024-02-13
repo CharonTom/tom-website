@@ -1,5 +1,3 @@
-"use client";
-
 import { FaAngleUp } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 
@@ -8,7 +6,7 @@ function ScrollToTop() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 300) {
         setScrollToTop(true);
       } else {
         setScrollToTop(false);

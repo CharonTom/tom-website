@@ -1,5 +1,3 @@
-"use client";
-
 import SkillCards from "../components/SkillCards";
 import logoReact from "../assets/logos/react.webp";
 import logoNext from "../assets/logos/next-js.webp";
