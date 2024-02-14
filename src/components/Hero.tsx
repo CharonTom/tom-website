@@ -39,15 +39,15 @@ function Hero() {
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
-            className="lg:w-[550px] w-[400px]"
+            className="lg:w-[550px] w-[330px]"
           >
             {/* text hi */}
 
-            <div className="text-center lg:text-3xl lg:text-left mb-5 relative">
+            <div className="text-center lg:text-4xl lg:text-left mb-5 relative">
               <p className="font-semibold">
                 {translate[language as keyof typeof translate].Hi}
               </p>
-              <h1 className="lg:text-5xl mb-2">
+              <h1 className="lg:text-6xl mb-2">
                 {translate[language as keyof typeof translate].MyName}
                 <span className="text-primary">Tom</span>
               </h1>
