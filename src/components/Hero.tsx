@@ -110,7 +110,7 @@ function Hero() {
               }
               className="transition-all duration-700 ease-in-out overflow-hidden"
             >
-              <div className="lg:w-[90%] text-sm lg:text-base text-center lg:text-left pt-3 mt-3 lg:mt-6 ml-2 border-t-[1px] border-primary">
+              <div className="lg:w-[90%] text-sm lg:text-base text-center pt-3 mt-3 lg:mt-6 ml-2 border-t-[1px] border-primary">
                 {translate[language as keyof typeof translate].speech}
               </div>
             </div>
