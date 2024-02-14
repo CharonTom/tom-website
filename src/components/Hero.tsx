@@ -33,20 +33,21 @@ function Hero() {
         className="blur-[100px] bg-tertiary rounded-full absolute top-[30%] right-[15%] w-[25%] h-[50%]"
       ></div>
 
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
+      <div className="mx-auto container">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
+            className="lg:w-[550px] w-[400px]"
           >
             {/* text hi */}
 
-            <div className="text-center lg:text-left mb-5 relative">
+            <div className="text-center lg:text-3xl lg:text-left mb-5 relative">
               <p className="font-semibold">
                 {translate[language as keyof typeof translate].Hi}
               </p>
-              <h1>
+              <h1 className="lg:text-5xl mb-2">
                 {translate[language as keyof typeof translate].MyName}
                 <span className="text-primary">Tom</span>
               </h1>
@@ -109,25 +110,25 @@ function Hero() {
               }
               className="transition-all duration-700 ease-in-out overflow-hidden"
             >
-              <p
-                className="text-[14px] text-center p-3 w-[340px] border-t-[1px] border-b-[1px]
-            border-primary rounded-lg mx-auto lg:mx-0 m-4"
-              >
+              <div className="text-sm lg:text-base text-center lg:text-left pt-3 mt-3 ml-2 border-t-[1px] border-primary">
                 {translate[language as keyof typeof translate].speech}
-              </p>
+              </div>
             </div>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
-            className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0 z-10"
+            className="z-10"
           >
-            <img
-              className="object-cover w-full h-full"
-              src={Me}
-              alt="tom charon"
-            />
+            <div className="box overflow-hidden h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] ">
+              <img
+                className="object-cover w-full h-full"
+                src={Me}
+                alt="tom charon"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
