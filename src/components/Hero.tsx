@@ -34,20 +34,20 @@ function Hero() {
       ></div>
 
       <div className="mx-auto container">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-5">
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
-            className="lg:w-[550px] w-[330px]"
+            className="lg:w-[500px] w-[330px]"
           >
             {/* text hi */}
 
-            <div className="text-center lg:text-4xl lg:text-left mb-5 relative">
+            <div className="text-center lg:text-3xl lg:text-left mb-5 relative">
               <p className="font-semibold">
                 {translate[language as keyof typeof translate].Hi}
               </p>
-              <h1 className="lg:text-6xl mb-2">
+              <h1 className="lg:text-5xl lg:mb-2">
                 {translate[language as keyof typeof translate].MyName}
                 <span className="text-primary">Tom</span>
               </h1>
@@ -110,7 +110,7 @@ function Hero() {
               }
               className="transition-all duration-700 ease-in-out overflow-hidden"
             >
-              <div className="text-sm lg:text-base text-center lg:text-left pt-3 mt-3 ml-2 border-t-[1px] border-primary">
+              <div className="lg:w-[90%] text-sm lg:text-base text-center lg:text-left pt-3 mt-3 lg:mt-6 ml-2 border-t-[1px] border-primary">
                 {translate[language as keyof typeof translate].speech}
               </div>
             </div>
