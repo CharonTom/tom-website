@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 import translate from "../utils/translate";
-import Me from "../assets/img/profil.png";
+import Me from "../assets/img/profil.webp";
 import CV from "../assets/CV_Tom_Charon.pdf";
 
 function Hero() {

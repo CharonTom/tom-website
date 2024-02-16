@@ -17,9 +17,9 @@ function SkillCards({
   return (
     <motion.article
       ref={ref}
-      initial={{ opacity: 0, y: 140 }}
+      initial={{ opacity: 0, y: 100 }}
       animate={isInView && { opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: delayCards }}
+      transition={{ duration: 0.4, delay: 0.2 + delayCards }}
       className=" h-[105px] w-[80px] lg:h-[150px] lg:w-[115px] bg-skill-cards rounded-lg flex 
     justify-center items-center flex-col border-2 border-gray-300 hover:scale-[1.02] shadow hover:shadow-primary "
     >
@@ -27,7 +27,7 @@ function SkillCards({
         <img
           src={logo}
           alt="logo's technos"
-          className="h-[50px] w-[50px]  lg:h-[75px] lg:w-[75px] rounded-full"
+          className="h-[50px] w-[50px]  lg:h-[70px] lg:w-[70px] rounded-full"
         />
       </div>
       <div className="mt-2 text-[12px] lg:text-base">{name}</div>

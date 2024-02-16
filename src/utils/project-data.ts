@@ -12,7 +12,7 @@ import logoGraphQL from "../assets/logos/graphql.webp";
 import logoExpress from "../assets/logos/expressJS.webp";
 import logoMySQL from "../assets/logos/mySQL.webp";
 import logoNext from "../assets/logos/next-js.webp";
-import logoFigma from "../assets/logos/figma.png";
+import logoFigma from "../assets/logos/figma.webp";
 
 import imageKanap from "../assets/img/devices/kanap.png";
 import imageOMF from "../assets/img/devices/omf.png";
