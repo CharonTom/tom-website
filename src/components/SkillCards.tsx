@@ -19,7 +19,7 @@ function SkillCards({
       ref={ref}
       initial={{ opacity: 0, y: 120 }}
       animate={isInView && { opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: delayCards }}
+      transition={{ duration: 1, delay: delayCards }}
       className=" h-[105px] w-[80px] lg:h-[150px] lg:w-[115px] bg-skill-cards rounded-lg flex 
     justify-center items-center flex-col border-2 border-gray-300 hover:scale-[1.02] shadow hover:shadow-primary "
     >
