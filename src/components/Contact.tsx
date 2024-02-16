@@ -1,13 +1,8 @@
-import {
-  useRef,
-  useState,
-  useContext,
-  useEffect,
-  MutableRefObject,
-} from "react";
+import { useRef, useState, useContext, useEffect } from "react";
 import emailjs from "emailjs-com";
 import translate from "../utils/translate";
 import { LanguageContext } from "../contexts/LanguageContext";
+import { motion, useInView } from "framer-motion";
 import { toast } from "react-toastify";
 
 interface FormValues {
@@ -24,7 +19,9 @@ interface FormError {
 
 function Contact() {
   const { language } = useContext(LanguageContext);
-  const form: MutableRefObject<HTMLFormElement | null> = useRef(null);
+
+  const form = useRef(null);
+  const ref = useRef(null);
 
   const initialValues = {
     name: "",
@@ -113,6 +110,8 @@ function Contact() {
     }
   };
 
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className="section relative" id="contact">
       <div
@@ -131,11 +130,12 @@ function Contact() {
         <h2 className="mb-12">
           {translate[language as keyof typeof translate].contact}
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div
+        <div ref={ref} className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <motion.div
+            initial={{ opacity: 0, x: -120 }}
+            animate={isInView && { opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 "
-            data-aos="fade-right"
-            data-aos-once="true"
           >
             <a href="mailto:charon.s.tom@gmail.com">
               <article className="contact-btn">
@@ -166,15 +166,16 @@ function Contact() {
                 <p> 69000 Lyon, France</p>
               </article>
             </a>
-          </div>
+          </motion.div>
+
           {/*---------------------------- form--------------------------- */}
 
-          <form
+          <motion.form
+            initial={{ opacity: 0, x: 120 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col gap-[10px] "
-            ref={form}
             onSubmit={handleEmailSending}
-            data-aos="fade-left"
-            data-aos-once="true"
           >
             <div className="flex gap-[10px]">
               <div className="flex-1">
@@ -231,7 +232,7 @@ function Contact() {
             >
               {translate[language as keyof typeof translate].sendButton}
             </button>
-          </form>
+          </motion.form>
         </div>
       </div>
     </section>

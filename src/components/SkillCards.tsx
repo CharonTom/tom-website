@@ -1,3 +1,6 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 function SkillCards({
   logo,
   name,
@@ -7,14 +10,18 @@ function SkillCards({
   name: string;
   index: number;
 }) {
-  const delay = 50 * index; // Délai basé sur la position de la carte
+  const ref = useRef(null);
+  const delayCards = 0.1 * index;
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <article
-      data-aos="fade-up"
-      data-aos-once="true"
-      data-aos-delay={delay}
-      className=" h-[105px] w-[80px]   lg:h-[150px] lg:w-[115px] bg-skill-cards rounded-lg flex 
-    justify-center items-center flex-col border-2 border-gray-300 hover:scale-[1.02] transition duration-300 shadow hover:shadow-primary "
+    <motion.article
+      ref={ref}
+      initial={{ opacity: 0, y: 120 }}
+      animate={isInView && { opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: delayCards }}
+      className=" h-[105px] w-[80px] lg:h-[150px] lg:w-[115px] bg-skill-cards rounded-lg flex 
+    justify-center items-center flex-col border-2 border-gray-300 hover:scale-[1.02] shadow hover:shadow-primary "
     >
       <div className="bg-white rounded-full flex items-center p-[2px]">
         <img
@@ -24,7 +31,7 @@ function SkillCards({
         />
       </div>
       <div className="mt-2 text-[12px] lg:text-base">{name}</div>
-    </article>
+    </motion.article>
   );
 }
 
