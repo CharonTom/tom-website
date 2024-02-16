@@ -17,7 +17,7 @@ function SkillCards({
   return (
     <motion.article
       ref={ref}
-      initial={{ opacity: 0, y: 120 }}
+      initial={{ opacity: 0, y: 140 }}
       animate={isInView && { opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: delayCards }}
       className=" h-[105px] w-[80px] lg:h-[150px] lg:w-[115px] bg-skill-cards rounded-lg flex 
