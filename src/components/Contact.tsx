@@ -134,7 +134,7 @@ function Contact() {
           <motion.div
             initial={{ opacity: 0, x: -120 }}
             animate={isInView && { opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 "
           >
             <a href="mailto:charon.s.tom@gmail.com">
@@ -173,7 +173,7 @@ function Contact() {
           <motion.form
             initial={{ opacity: 0, x: 120 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col gap-[10px] "
             onSubmit={handleEmailSending}
           >
