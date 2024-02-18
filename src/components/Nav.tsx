@@ -6,32 +6,36 @@ import externeLogo from "../assets/logos/external-link.webp";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { GrTechnology } from "react-icons/gr";
+import { CiUser } from "react-icons/ci";
+import { FiUser } from "react-icons/fi";
 
 import { BsChatSquareText, BsBriefcase, BsGear } from "react-icons/bs";
 import { BiUser } from "react-icons/bi";
+import { FaRegUser } from "react-icons/fa";
+import { FaCircleUser } from "react-icons/fa6";
 
 function Nav() {
   return (
-    <nav className="fixed bottom-4 lg:bottom-5 z-20 mx-auto left-1/2 transform -translate-x-1/2">
+    <nav className="fixed bottom-4 lg:bottom-6 z-20 mx-auto left-1/2 transform -translate-x-1/2">
       <motion.div
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ delay: 1 }}
-        className="text-black text-3xl border-2 dark:border-gray border-primary rounded-full dark:bg-navbar bg-light-navbar
-        flex justify-around items-center h-[70px] max-w-[430px] mx-auto"
+        className="text-secondary text-[26px] border-2 dark:border-gray border-primary rounded-full dark:bg-navbar bg-light-navbar
+        flex justify-around items-center h-[70px] max-w-[420px] mx-auto lg:px-3"
       >
         <Link
-          className="mx-3 lg:mx-5 cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+          className=" transition duration-150 ease-in-out mx-2 w-[42px] h-[42px] flex items-center justify-center cursor-pointer rounded-full hover:bg-secondary hover:text-primary"
           to="hero"
           spy={true}
           smooth={true}
           activeClass="active"
           duration={500}
         >
-          <BiUser />
+          <FiUser className="user" />
         </Link>
         <Link
-          className="mx-3 lg:mx-5 cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+          className=" transition duration-150 ease-in-out mx-2 w-[42px] h-[42px] flex items-center justify-center cursor-pointer rounded-full hover:bg-secondary hover:text-primary"
           to="skills"
           spy={true}
           smooth={true}
@@ -42,7 +46,7 @@ function Nav() {
           <BsGear />
         </Link>
         <Link
-          className="mx-3 lg:mx-5 cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+          className=" transition duration-150 ease-in-out mx-2 w-[42px] h-[42px] flex items-center justify-center cursor-pointer rounded-full hover:bg-secondary hover:text-primary"
           to="portfolio"
           spy={true}
           smooth={true}
@@ -53,7 +57,7 @@ function Nav() {
           <BsBriefcase />
         </Link>
         <Link
-          className="mx-3 lg:mx-5 cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+          className=" transition duration-150 ease-in-out mx-2 w-[42px] h-[42px] flex items-center justify-center cursor-pointer rounded-full hover:bg-secondary hover:text-primary"
           to="contact"
           spy={true}
           smooth={true}
@@ -63,42 +67,42 @@ function Nav() {
         >
           <BsChatSquareText />
         </Link>
-        <div className="relative w-[36px] mx-2 lg:mx-4 rounded-full hover:scale-110 transition duration-300 ease-in-out cursor-pointer">
-          <a
-            href="https://github.com/CharonTom"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="h-full rounded-full w-[36px] h-[36px]"
-              src={githubLogo}
-              alt="external link pictogram"
-            />
-            <img
-              className="absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px]"
-              src={externeLogo}
-              alt="external arrow"
-            />
-          </a>
-        </div>
-        <div className="relative w-[36px] mx-2 lg:mx-4 rounded-full hover:scale-110 transition duration-300 ease-in-out cursor-pointer">
-          <a
-            href="https://www.linkedin.com/in/tom-charon/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="h-full rounded-full w-[36px] h-[36px]"
-              src={linkedinLogo}
-              alt="external link pictogram"
-            />
-            <img
-              className="absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px]"
-              src={externeLogo}
-              alt="external arrow"
-            />
-          </a>
-        </div>
+
+        <a
+          href="https://github.com/CharonTom"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block relative w-[40px] mx-2 lg:mx-4 rounded-full hover:scale-110 transition duration-100 ease-in-out"
+        >
+          <img
+            className="h-full rounded-full w-[40px] h-[40px]"
+            src={githubLogo}
+            alt="external link pictogram"
+          />
+          <img
+            className="absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px]"
+            src={externeLogo}
+            alt="external arrow"
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/tom-charon/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative w-[40px] mx-2 lg:mx-4 rounded-full hover:scale-110 transition duration-100 ease-in-out"
+        >
+          <img
+            className="h-full rounded-full w-[40px] h-[40px]"
+            src={linkedinLogo}
+            alt="external link pictogram"
+          />
+          <img
+            className="absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px]"
+            src={externeLogo}
+            alt="external arrow"
+          />
+        </a>
       </motion.div>
     </nav>
   );
