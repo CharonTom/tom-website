@@ -20,7 +20,7 @@ function Nav() {
         className="border-2 dark:border-gray border-primary rounded-full dark:bg-navbar bg-light-navbar
         flex justify-around items-center h-[70px] w-full max-w-[430px] mx-auto"
       >
-        <li className="mx-3 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125">
+        <li className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125">
           <Link
             to="hero"
             spy={true}
