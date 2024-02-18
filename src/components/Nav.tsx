@@ -13,7 +13,7 @@ import { FaUserAlt } from "react-icons/fa";
 function Nav() {
   return (
     <nav className="fixed bottom-4 lg:bottom-5 z-20 mx-auto left-1/2 transform -translate-x-1/2">
-      <motion.ul
+      {/* <motion.ul
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ delay: 1 }}
@@ -119,7 +119,8 @@ function Nav() {
             />
           </a>
         </li>
-      </motion.ul>
+      </motion.ul> */}
+      navbar test
     </nav>
   );
 }
