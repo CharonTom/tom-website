@@ -7,7 +7,9 @@ function Header() {
       <div className="mx-5 md:mx-10 lg:mx-14 flex justify-between items-center py-4 lg:px-10">
         <div className="p-[8px] dark:text-white text-secondary">
           <span className="font-semibold text-[18px]">
-            <a href="/">Tom Charon</a>
+            <a href="/" className="relative name">
+              Tom Charon
+            </a>
           </span>
         </div>
         <div className="flex items-center gap-x-5">
