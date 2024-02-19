@@ -1,18 +1,11 @@
-import skillLogo from "../assets/logos/skill.webp";
-import portfolioLogo from "../assets/logos/portfolio.webp";
 import linkedinLogo from "../assets/logos/linkedin.webp";
 import githubLogo from "../assets/logos/github.webp";
 import externeLogo from "../assets/logos/external-link.webp";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import { GrTechnology } from "react-icons/gr";
-import { CiUser } from "react-icons/ci";
-import { FiUser } from "react-icons/fi";
 
+import { FiUser } from "react-icons/fi";
 import { BsChatSquareText, BsBriefcase, BsGear } from "react-icons/bs";
-import { BiUser } from "react-icons/bi";
-import { FaRegUser } from "react-icons/fa";
-import { FaCircleUser } from "react-icons/fa6";
 
 function Nav() {
   return (
