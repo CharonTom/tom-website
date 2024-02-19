@@ -72,7 +72,7 @@ function Nav() {
           href="https://github.com/CharonTom"
           target="_blank"
           rel="noopener noreferrer"
-          className="block relative w-[40px] mx-2 lg:mx-4 rounded-full hover:scale-110 transition duration-100 ease-in-out"
+          className="block relative w-[40px] mx-2 lg:mx-4 rounded-full hover:scale-110 transition duration-200 ease-in-out"
         >
           <img
             className="h-full rounded-full w-[40px] h-[40px]"
@@ -80,7 +80,7 @@ function Nav() {
             alt="external link pictogram"
           />
           <img
-            className="absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px]"
+            className="absolute -bottom-[5px] -right-[5px] w-[15px] h-[15px]"
             src={externeLogo}
             alt="external arrow"
           />
@@ -90,7 +90,7 @@ function Nav() {
           href="https://www.linkedin.com/in/tom-charon/"
           target="_blank"
           rel="noopener noreferrer"
-          className="relative w-[40px] mx-2 lg:mx-4 rounded-full hover:scale-110 transition duration-100 ease-in-out"
+          className="block relative w-[40px] mx-2 lg:mx-4 rounded-full hover:scale-110 transition duration-200 ease-in-out"
         >
           <img
             className="h-full rounded-full w-[40px] h-[40px]"
@@ -98,7 +98,7 @@ function Nav() {
             alt="external link pictogram"
           />
           <img
-            className="absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px]"
+            className="absolute -bottom-[5px] -right-[5px] w-[15px] h-[15px]"
             src={externeLogo}
             alt="external arrow"
           />
