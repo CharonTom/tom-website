@@ -22,7 +22,7 @@ function ScrollToTop() {
   };
 
   return (
-    <div className="">
+    <div className="hidden lg:block">
       {ScrollToTop && (
         <button
           className="btn flex justify-center items-center fixed inline-block sm:bottom-8 group bottom-[90px] right-10 z-40"
