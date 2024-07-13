@@ -171,6 +171,7 @@ function Contact() {
           {/*---------------------------- form--------------------------- */}
 
           <motion.form
+            ref={form}
             initial={{ opacity: 0, x: 120 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
